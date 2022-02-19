@@ -3,6 +3,14 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
 import Header from './components/Header/Header'
+import { css } from "@emotion/react";
+import MoonLoader from "react-spinners/MoonLoader";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 function App () {
   const [defaultList, setDefaultList] = useState([])
@@ -89,7 +97,9 @@ function App () {
       />
       <div className='appContainer'>
         {pageLoading ? (
-          <p>Loading...</p>
+          <div className='loadingScreen'>
+            <MoonLoader color={'#4fc08d'} css={override} size={100} />
+          </div>  
         ) : (
           <>
             {currentScreen === 'main' ? (
