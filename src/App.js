@@ -47,7 +47,7 @@ function App () {
       setPageLoading(true)
       try {
         const { data } = await axios.get(
-          'http://api.nobelprize.org/v1/prize.json'
+          'https://api.nobelprize.org/v1/prize.json'
         )
         let array = []
         data.prizes.forEach(prize => {
