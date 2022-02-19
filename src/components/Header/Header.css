@@ -6,4 +6,18 @@
     z-index: 999;
     background-color: #4fc08d;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerLeft{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.headerRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex: 1;
 }

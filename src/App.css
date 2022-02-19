@@ -10,3 +10,21 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.buttonRow{
+  padding: 10px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.buttonRow>button{
+  margin-right: 10px;
+}
+.textBox{
+  border: 1px solid lightgray;
+  width: 303px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}

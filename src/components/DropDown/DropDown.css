@@ -1,0 +1,52 @@
+.dropdown{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 10px;
+}
+.dropdownButton>button{
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 18px;
+}
+.dropdownContainer{
+    background-color: rgb(237, 237, 237);
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+    max-height: 150px;
+    overflow-y: auto;
+    color: black;
+    
+}
+.dropDownOuter{
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.list{
+    padding: 5px;
+    border-bottom: 0.3px solid rgb(175, 174, 174);
+    cursor: pointer;
+}
+.list:hover{
+    background-color: #4fc08d;
+    color: white;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: all 200ms ease-in-out;
+}
+.completeRotate{
+  transform: rotate(360deg);
+  transition: all 200ms ease-in-out;
+}
